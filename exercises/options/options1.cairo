@@ -12,7 +12,12 @@ fn maybe_icecream(time_of_day: usize) -> Option<usize> {
     // We use the 24-hour system here, so 10PM is a value of 22 and 12AM is a value of 0
     // The Option output should gracefully handle cases where time_of_day > 23.
     // TODO: Complete the function body - remember to return an Option!
-}
+    let time: u32 = 0;
+    if time_of_day > 22 {
+        time = time_of_day - 22;
+        return time;
+    }
+ }
 
 
 #[test]

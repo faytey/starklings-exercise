@@ -4,12 +4,24 @@
 // Write a function that calculates the price of an order of apples given
 // the quantity bought. No hints this time!
 
-// I AM NOT DONE
+use debug::PrintTrait;
 
 // Put your function here!
-// fn calculate_price_of_apples{
-
-// }
+fn calculate_price_of_apples(quantity: u64) -> u64 {
+    let mut price: u64 = 0;
+    let mut totalCost: u64 = 0;
+    if quantity <= 40 {
+        price = 3;
+        totalCost = quantity * price;
+        totalCost.print();
+        return totalCost;
+    } else {
+        price = 2;
+        totalCost = quantity * price;
+        totalCost.print();
+        return totalCost;
+    }
+}
 
 // Do not change the tests!
 #[test]
